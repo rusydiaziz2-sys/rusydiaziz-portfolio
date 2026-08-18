@@ -66,7 +66,7 @@
   /* ===== HERO ===== */
   .hero { padding: 90px 0 50px; }
   .hero .role-tags {
-    display: flex; gap: 10px; flex-wrap: wrap;
+    display: flex; gap: 12px; flex-wrap: wrap;
     margin: 20px 0 22px;
   }
   .hero h1 {
@@ -74,11 +74,15 @@
     max-width: 720px;
   }
   .role-tag {
+    display: inline-flex; align-items: center; justify-content: center;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px; color: var(--amber);
+    font-size: 12.5px; color: var(--amber);
     border: 1px solid rgba(242,169,59,0.4);
     background: rgba(242,169,59,0.06);
-    padding: 5px 10px; border-radius: 3px;
+    padding: 8px 16px; border-radius: 3px;
+    min-width: 180px;
+    flex: 1 1 0;
+    max-width: 220px;
   }
   .hero p.lead {
     max-width: 620px; color: var(--muted); font-size: 16px;
@@ -606,13 +610,12 @@
 
   <!-- HERO -->
   <section class="hero" style="border-bottom:none; padding-bottom:0;">
-    <h1>Instrumentation &amp; Control Engineer</h1>
+    <h1>Instrumentation &amp; Control Engineer | PV Engineer | Data Analyst</h1>
     <div class="role-tags">
       <span class="role-tag">INSTRUMENTATION &amp; CONTROL</span>
       <span class="role-tag">PV / ENERGY SYSTEMS</span>
       <span class="role-tag">DATA &amp; ML</span>
     </div>
-    <p class="lead">I build the systems that read, control, and make sense of physical processes &mdash; from PLC-driven automation to edge computing and anomaly detection. Based in Bekasi, Indonesia.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">VIEW PROJECTS &rarr;</a>
       <a href="mailto:rusydi.aziz2@gmail.com" class="btn btn-ghost">GET IN TOUCH</a>
