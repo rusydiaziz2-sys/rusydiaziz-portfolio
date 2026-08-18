@@ -66,22 +66,19 @@
   /* ===== HERO ===== */
   .hero { padding: 90px 0 50px; }
   .hero .role-tags {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
     gap: 12px;
     width: 100%;
     margin: 20px 0 22px;
+    justify-content: space-between;
   }
   .hero h1 {
     display: block;
     width: 100%; max-width: 100%;
     font-size: 46px; font-weight: 700; line-height: 0.96;
     letter-spacing: -0.05em;
-    text-align: left;
-  }
-  .hero h1 .title-block {
-    display: block;
-    white-space: normal;
+    text-align: justify;
+    text-justify: inter-word;
   }
   .role-tag {
     display: flex; align-items: center; justify-content: center;
@@ -91,7 +88,7 @@
     border: 1px solid rgba(242,169,59,0.4);
     background: rgba(242,169,59,0.06);
     padding: 8px 16px; border-radius: 3px;
-    width: 100%;
+    flex: 1 1 0;
     min-height: 56px;
   }
   .hero p.lead {
@@ -620,10 +617,7 @@
 
   <!-- HERO -->
   <section class="hero" style="border-bottom:none; padding-bottom:0;">
-    <h1>
-      <span class="title-block">Instrumentation &amp; Control</span>
-      <span class="title-block">Engineer | PV Engineer | Data Analyst</span>
-    </h1>
+    <h1>Instrumentation &amp; Control Engineer | PV Engineer | Data Analyst</h1>
     <div class="role-tags">
       <span class="role-tag">INSTRUMENTATION &amp; CONTROL</span>
       <span class="role-tag">PV / ENERGY SYSTEMS</span>
