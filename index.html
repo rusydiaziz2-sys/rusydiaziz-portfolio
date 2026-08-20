@@ -248,6 +248,14 @@
     width: 100%; border-radius: 4px; border: 1px solid var(--border);
     display: block; margin-bottom: 14px;
   }
+  .project-media-simple {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px; margin: 0 0 18px; align-items: stretch;
+  }
+  .project-media-simple img {
+    display: block; width: 100%; height: auto; border-radius: 4px;
+    background: #0d1b2a; margin: 0;
+  }
   .media-row {
     display: flex; gap: 12px; align-items: stretch;
     margin-bottom: 14px;
@@ -894,38 +902,9 @@
         <div class="project-meta">ACADEMIC PROJECT<br>Dec 2024 &ndash; Jan 2025</div>
       </div>
       <div class="media-gallery">
-        <div class="project-media-combo">
-          <div class="mobile-column">
-            <figure>
-              <div class="phone-frame">
-                <img class="phone-image" src="./assets/65fabb39_Pasted_Image.png" alt="Infrared sensor measurement system setup">
-              </div>
-              <figcaption>Measurement bench</figcaption>
-            </figure>
-            <figure>
-              <div class="phone-frame">
-                <img class="phone-image" src="./assets/70a8e74c_Pasted_Image_3.png" alt="Sensor calibration and data acquisition setup">
-              </div>
-              <figcaption>Calibration setup</figcaption>
-            </figure>
-          </div>
-          <div class="dashboard-column">
-            <div class="media-caption">ANALYSIS &amp; CHARACTERIZATION</div>
-            <div class="dashboard-stack">
-              <div class="dashboard-panel dashboard-panel--overview">
-                <img class="phone-image" src="./assets/65fabb39_Pasted_Image.png" alt="Sensor output characterization">
-                <div class="panel-label">Static analysis</div>
-              </div>
-              <div class="dashboard-panel dashboard-panel--transaction">
-                <img class="phone-image" src="./assets/70a8e74c_Pasted_Image_3.png" alt="Dynamic response and instability diagnosis">
-                <div class="panel-label">Dynamic response</div>
-              </div>
-              <div class="dashboard-panel dashboard-panel--live">
-                <img class="phone-image" src="./assets/92d584ca_Pasted_Image_5.png" alt="System troubleshooting and calibration results">
-                <div class="panel-label">Reliability fix</div>
-              </div>
-            </div>
-          </div>
+        <div class="project-media-simple">
+          <img src="./assets/infrared-system-wiring.png" alt="Infrared distance measurement system wiring diagram">
+          <img src="./assets/infrared-setup-rail.png" alt="Infrared sensor measurement setup on the rail">
         </div>
       </div>
       <div class="spec-block">
