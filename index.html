@@ -203,6 +203,11 @@
   .thumbs .shot { width: auto; display: inline-block; }
   .thumbs .shot img { width: auto; height: 150px; }
 
+  .duties { margin: 8px 0 0 20px; max-width: 64ch; }
+  .duties li { margin-bottom: 8px; }
+  .duties strong { font-weight: 600; }
+  .tools li.no-icon { padding-left: 12px; }
+
   /* Organizations */
   .orgs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .org-card { display: flex; flex-direction: column; overflow: hidden; }
@@ -509,6 +514,19 @@
     <p class="lede">Internships and teaching roles, most recent first.</p>
     <ol class="timeline">
       <li>
+        <div class="when num">Sep 2026 &ndash; Oct 2026 &middot; 1 month</div>
+        <h3>Automation Engineer Intern</h3>
+        <div class="org">PT Granitor Systems</div>
+        <p>Worked on PLC programming and integration for two industrial clients:</p>
+        <ul class="duties">
+          <li><strong>S7-300 to S7-400 PLC upgrade &mdash; PT Transportasi Gas Indonesia.</strong> Migrated the existing control program to new S7-400 hardware in SIMATIC STEP 7, keeping the same logic. I handled the signal mapping between the old and new configuration.</li>
+          <li><strong>Big Gossan mine monitoring &mdash; PT Freeport Indonesia.</strong> Built the monitoring program in TIA Portal and integrated it with OPC UA.</li>
+        </ul>
+        <div class="thumbs">
+          <button class="shot" type="button"><img src="./assets/granitor-internship.jpg" alt="Rusydi Aziz at the PT Granitor Systems office" loading="lazy" width="800" height="1065"></button>
+        </div>
+      </li>
+      <li>
         <div class="when num">Jul 2025 &ndash; Sep 2025</div>
         <h3>Mine Facility Engineering Intern</h3>
         <div class="org">PT Kideco Jaya Agung</div>
@@ -605,6 +623,8 @@
         <h3>Control systems &amp; PLC</h3>
         <ul class="tools">
           <li><img src="https://cdn.simpleicons.org/siemens" alt="" loading="lazy">TIA Portal</li>
+          <li><img src="https://cdn.simpleicons.org/siemens" alt="" loading="lazy">SIMATIC STEP 7</li>
+          <li class="no-icon">OPC UA</li>
           <li><img src="./assets/65fabb39_Pasted_Image.png" alt="" loading="lazy" width="547" height="365">TwidoSuite</li>
           <li><img src="https://cdn.simpleicons.org/schneiderelectric" alt="" loading="lazy">EcoStruxure Machine</li>
           <li><img src="./assets/18dc7a1f_Pasted_Image_2.png" alt="" loading="lazy" width="768" height="768">Factory IO</li>
